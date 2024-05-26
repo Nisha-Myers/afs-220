@@ -1,5 +1,5 @@
 img{
-    max-height: 500px;
+    max-block-size: 500px;
 
 }
 .wrapper{
@@ -10,7 +10,7 @@ img{
 .header{
     display: flex;
     justify-content: center;
-    font-family: 'Lavishly Yours', cursive;
+    font-family: 'Lavishly you'res', cursive;
 }
 body{
     background:#d3c8c8;
@@ -19,6 +19,6 @@ h1{
     font-size: 800%;
 }
 p{
-width: 200;
+inline-size: 200;
 
 }

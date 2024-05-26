@@ -1,28 +1,29 @@
 * {
+    background-image: url(pexels-valeriiamiller-3361162.png);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lavishly Yours', cursive;
+    font-family: 'Lavishly you'res', cursive;
 }
 
 .navbar {
 background:#d3c8c8;
-height: 80px;
+block-size: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
 font-size: 1.2rem;
 position: sticky;
-top: 0;
+inset-block-start: 0;
 z-index: 999;
 }
 .navbar_container{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    block-size: 40px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
+    inline-size: 100%;
+    max-inline-size: 1200px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -43,7 +44,7 @@ z-index: 999;
 
 }
 .fa-gem{
-    margin-right: 0.5rem;
+    margin-inline-end: 0.5rem;
     
 }
 .navbar_menu{
@@ -53,7 +54,7 @@ z-index: 999;
     text-align: center;
 }
 .navbar_item{
-height: 80px;
+block-size: 80px;
 }
 .navbar_links{
     color: aliceblue;
@@ -62,7 +63,7 @@ height: 80px;
     justify-content: center;
     text-decoration: none;
     padding: 01rem;
-    height: 100%;
+    block-size: 100%;
 }
 .navbar_btn{
     display:flex;
@@ -71,7 +72,7 @@ height: 80px;
     justify-content: center;
     text-decoration: none;
     padding: 01rem;
-    width: 100%;
+    inline-size: 100%;
 }
 .button{
 display: flex;
@@ -79,8 +80,8 @@ justify-content: center;
 align-items: center;
 text-decoration:none ;
 padding: 10px 20px;
-height: 100%;
-width: 100%;
+block-size: 100%;
+inline-size: 100%;
 border: none;
 outline:none ;
 border-radius: 4px;
@@ -91,72 +92,72 @@ color: #ffff;
     background: #b4dde7;
     transition: all 0.3 ease;
 }
-@media screen and (max-width:960px){
+@media screen and (max-inline-size:960px){
  .navbar_container{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    block-size: 80px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
+    inline-size: 100%;
+    max-inline-size: 1300px;
     padding: 0;
  } 
  .navbar_menu{
     display: grid;
     grid-template-columns: auto;
     margin: 0%;
-    width: 100%;
+    inline-size: 100%;
     position:absolute;
-    top:-1000px
+    inset-block-start:-1000px
     opacity 0;
     transition: all 0.5s ease;
-    height: 50vh; 
+    block-size: 50vh; 
     z-index: -1;
     background:#131313 ;
  } 
  .navbar_menu.active{
     background:#131313 ;
-    top:100%;
+    inset-block-start:100%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 50vh;
+    block-size: 50vh;
     font-size: 1.6rem;
  } 
  #navbar_logo{
-    padding-left: 25px;
+    padding-inline-start: 25px;
  }
  .navbar_toggle.bar{
-    width: 25px;
-    height: 3px;
+    inline-size: 25px;
+    block-size: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background: #ffff;
  }
  .navbar_item{
-    width: 100%;
+    inline-size: 100%;
  }
  .navbar_links{
     text-align: center;
     padding: 2rem;
-    width: 100%;
+    inline-size: 100%;
     display: table;
  }
 #mobile-menu{
     position: absolute;
-    top: 20%;
-    right: 5%;
+    inset-block-start: 20%;
+    inset-inline-end: 5%;
     transform: translate(5%,20%);
 }
 
 .navbar_btn{
-    padding-bottom: 2rem;
+    padding-block-end: 2rem;
 }
 .button{
 display: flex;
 justify-content: center;
 align-items: center;
-width: 80;
+inline-size: 80;
 margin: 0;
 }
 .navbar_toggle.bar{
